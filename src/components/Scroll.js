@@ -2,10 +2,6 @@ import smoothscroll from 'smoothscroll-polyfill';
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Element = props => {
-  return props.children;
-};
-
 class Scroll extends React.Component {
   static propTypes = {
     type: PropTypes.string,
@@ -57,13 +53,7 @@ class Scroll extends React.Component {
   }
   render() {
     return (
-      <Element>
-        {typeof this.props.children === 'object' ? (
-          React.cloneElement(this.props.children, { onClick: this.handleClick })
-        ) : (
-          <span onClick={this.handleClick}>{this.props.children}</span>
-        )}
-      </Element>
+      React.cloneElement(this.props.children, { onClick: this.handleClick })
     );
   }
 }

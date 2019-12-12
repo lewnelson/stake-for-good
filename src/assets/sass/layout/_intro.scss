@@ -13,10 +13,54 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
 
+  .home-title {
+    margin-bottom: 20px;
+
+    > div,
+    > h1 {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    > div {
+      width: 15%;
+      max-width: 200px;
+      min-width: 90px;
+      margin-right: 2%;
+    }
+
+    > h1 {
+      margin: 0;
+    }
+
+    @include breakpoint('<=small') {
+      text-align: center;
+
+      > div,
+      > h1 {
+        display: block;
+      }
+
+      > div {
+        margin: 0 auto 10px;
+      }
+    }
+  }
+
+  @include breakpoint('<=small') {
+    text-align: center;
+
+    .actions {
+      li {
+        width: 100%;
+      }
+    }
+  }
+
   p {
     font-size: 1.25em;
 
-    @include breakpoint('<=medium') {
+    @include breakpoint('<=small') {
       br {
         display: none;
       }

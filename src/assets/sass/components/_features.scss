@@ -15,7 +15,7 @@
 		margin: 0 0 _size(element-margin) 0;
 
 		section {
-			@include padding(3em, 3em, (0.5em, 0, 0, 4em));
+			@include padding(3.5em, 3em);
 			width: 50%;
 			border-top: solid 1px _palette(border);
 			position: relative;
@@ -75,7 +75,7 @@
 
 		@include breakpoint('<=small') {
 			section {
-				@include padding(2em, 1.5em, (0.5em, 0, 0, 4em));
+				@include padding(2em, 1.5em);
 
 				.icon {
 					left: 1.5em;
@@ -86,7 +86,7 @@
 
 		@include breakpoint('<=xsmall') {
 			section {
-				@include padding(2em, 1.5em, (0, 0, 0, 0));
+				@include padding(2em, 1.5em);
 
 				.icon {
 					left: 0;

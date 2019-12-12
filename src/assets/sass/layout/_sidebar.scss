@@ -198,8 +198,4 @@
       }
     }
   }
-
-  @include breakpoint('<=small') {
-    display: none;
-  }
 }
