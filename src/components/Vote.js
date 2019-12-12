@@ -33,7 +33,7 @@ const Vote = () => {
       setChoices(choices)
       setCurrentEpoch(currentEpoch)
       if (choices.alreadyVoted) {
-        setStatus(statuses.READY)
+        setStatus(statuses.VOTED)
       } else if (!choices.open) {
         setStatus(statuses.CLOSED)
       } else {
@@ -156,7 +156,7 @@ const Vote = () => {
           </p>
           <ol>
             {choices.choices.map(choice => (
-              <li><a href={choice.url} target='_blank' rel="noopener noreferrer">{choice.name}</a> - {choices.results[choice.id]} ({getResultPercentage(choice.id)}%)</li>
+              <li key={choice.id}><a href={choice.url} target='_blank' rel="noopener noreferrer">{choice.name}</a> - {choices.results[choice.id]} ({getResultPercentage(choice.id)}%)</li>
             ))}
           </ol>
           <p>

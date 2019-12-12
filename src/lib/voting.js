@@ -33,6 +33,11 @@ function set (url, data, ttl) {
   persistCache()
 }
 
+function unset (url) {
+  delete cache[url]
+  persistCache()
+}
+
 export async function getCurrentEpoch () {
   const url = `${baseURL}/getCurrentEpoch`
   const hit = get(url)
@@ -55,9 +60,7 @@ export async function getCurrentVotingChoices () {
 
 export async function castVote (epoch, choice) {
   const url = `${baseURL}/vote`
-  const hit = get(url)
-  if (hit) return hit
-  const result = await fetch(url, {
+  await fetch(url, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -65,7 +68,5 @@ export async function castVote (epoch, choice) {
     body: JSON.stringify({ epoch, choice })
   })
 
-  const data = await result.json()
-  set(url, data, 300)
-  return data
+  unset(`${baseURL}/getCurrentVotingChoices`)
 }
