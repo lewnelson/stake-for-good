@@ -47,7 +47,10 @@ const IndexPage = ({ data }) => (
               <div className="inner">
                 <h2>Vote now</h2>
                 <p>
-                  Vote for your preferred charity. Voting closes after the current epoch. The rewards from the next epoch will be distributed according to the voting results.
+                  Vote for your preferred charity. Voting closes after the current epoch. The rewards from the next epoch will be distributed according to the voting results.*
+                </p>
+                <p>
+                  * <small>For every 1 ADA earned in rewards 0.3 ADA will be donated to charities.</small>
                 </p>
               </div>
             </section>

@@ -49,7 +49,7 @@ const Vote = () => {
     try {
       setStatus(statuses.VOTING)
       await castVote(currentEpoch.id + 1, choice)
-      const newResults = { ...choice.results }
+      const newResults = { ...choices.results }
       newResults[choice]++
       setChoices({
         ...choices,
@@ -141,6 +141,10 @@ const Vote = () => {
       }
       {(status === statuses.CLOSED || status === statuses.SKIPPED_VOTING || status === statuses.VOTED) &&
         <div className='results'>
+          <div>
+            <h2 className='main-title'>Epoch {currentEpoch.id + 1}</h2>
+            <h3>{moment(currentEpoch.endTime).format('Do MMM YYYY, HH:mm:ss')}</h3>
+          </div>
           <p>
             {status === statuses.CLOSED && 'Voting for the next epoch has now closed'}
             {status === statuses.SKIPPED_VOTING &&
