@@ -36,6 +36,25 @@ const IndexPage = ({ data }) => (
         </div>
       </section>
 
+      <section id="explained" className="wrapper style2">
+        <div className="inner">
+          <h2>Stake For Good explained</h2>
+          <p>
+            Cardano is a decentralised blockchain network based on the proof of stake (PoS) protocol <a href='https://www.cardano.org/en/ouroboros/'>Ouroboros</a>. As a stake pool, Stake For Good helps to run the network. By delegating to a stake pool you are pledging your support to that stake pool. In return stake pools receive rewards for running helping to run the network, as well as anyone delegating their stake to a stake pool.
+          </p>
+          <p>
+            By choosing to pledge to Stake For Good, you will receive your rewards as you would from any other stake pool, but in return Stake For Good promises to donate a portion of it's reward to charities chosen by the community.
+          </p>
+          <h3>Our promise</h3>
+          <ol>
+            <li>To run a successful node on cloud based infrastructure to ensure high availability and redundancy.</li>
+            <li>To donate 0.3 ADA for every 1 ADA earned by the stake pool. This has no effect on the rewards you receive as a delegator.</li>
+            <li>To ensure our margins remain fair and competitive.</li>
+            <li>We will set our fixed costs only to cover our cloud infrastructure costs. The fixed costs will be revised periodically to ensure they are inline with the current ADA -> USD exchange rates.</li>
+          </ol>
+        </div>
+      </section>
+
       <section id="have-your-say" className="wrapper style3 fade-up">
         <div className="inner">
           <h2>Have your say</h2>

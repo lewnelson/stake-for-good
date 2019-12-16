@@ -8,6 +8,7 @@ export class Sidebar extends Component {
     this.state = {
       tabs: [
         { content: 'Welcome', href: 'intro' },
+        { content: 'Explained', href: 'explained' },
         { content: 'Have your say', href: 'have-your-say' }
       ]
     };
