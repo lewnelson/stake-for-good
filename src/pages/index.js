@@ -36,7 +36,7 @@ const IndexPage = ({ data }) => (
         </div>
       </section>
 
-      <section id="explained" className="wrapper style2">
+      <section id="explained" className="wrapper style1">
         <div className="inner">
           <h2>Stake For Good explained</h2>
           <p>
