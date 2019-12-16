@@ -20,8 +20,18 @@ const Layout = ({ children }) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'Hyperspace' },
-            { name: 'keywords', content: 'site, web' },
+            { name: 'description', content: 'A Cardano stake pool dedicated to running the network and donating to charity.' },
+            { name: 'twitter:card', content: 'summary' },
+            { name: 'twitter:title', content: 'Stake For Good' },
+            { name: 'twitter:description', content: 'A Cardano stake pool dedicated to running the network and donating to charity.' },
+            { name: 'twitter:site', content: '@StakeForGood' },
+            { name: 'twitter:image', content: 'https://stakeforgood.org/static/images/stake-for-good.png' },
+            { name: 'twitter:image:alt', content: 'Stake For Good website' },
+            { name: 'og:type', content: 'website' },
+            { name: 'og:title', content: 'Stake For Good' },
+            { name: 'og:description', content: 'A Cardano stake pool dedicated to running the network and donating to charity.' },
+            { name: 'og:image', content: 'https://stakeforgood.org/static/images/stake-for-good.png' },
+            { name: 'og:image:alt', content: 'Stake For Good website' }
           ]}
         >
           <html lang="en" />
