@@ -52,6 +52,9 @@ const IndexPage = ({ data }) => (
             <li>To ensure our margins remain fair and competitive.</li>
             <li>We will set our fixed costs only to cover our cloud infrastructure costs. The fixed costs will be revised periodically to ensure they are inline with the current ADA -> USD exchange rates.</li>
           </ol>
+          <h3>How do I delegate?</h3>
+          <p>You can delegate to us via Daedalus or Yoroi. Both of which will be releasing a testnet version of their applications. You can find us under the ticker "GOOD"</p>
+          <p><em>We anticipate reducing the fixed fees once we can update our stake pool parameters.</em></p>
         </div>
       </section>
 
