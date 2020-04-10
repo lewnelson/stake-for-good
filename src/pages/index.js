@@ -8,7 +8,6 @@ import Sidebar from '../components/Sidebar';
 import Scroll from '../components/Scroll';
 import Vote from '../components/Vote';
 
-const IndexPage = ({ data }) => (
   <Layout>
     <Sidebar />
 
